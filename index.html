@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload files</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <form method="post" enctype="multipart/form-data">
+    <input type="file" name="file" id="file" onchange="upload()"><br>
+    <progress id="progressBar" value="0" max="100" style="width:250px;"></progress>
+    <h2 id="status"></h2>
+    <p id="loadedtotal"></p>
+</form>
+
+<br><br>
+
+<div id="files_list">
+
+</div>
+  
+<script src="app.js"></script>
+</body>
+</html>
